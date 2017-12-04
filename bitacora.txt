@@ -7,3 +7,13 @@
  Paso   Acción                       Notas
 ====== ============================ ================================
  (25)                               fast-forward
+ (27)   tag -a RespuestaPreguntaFusion -m "RespuestaPreguntaFusion"
+ (28)   push origin master
+        pull
+        push origin master
+        checkout Historia000
+        push -u origin Historia000
+        checkout Historia001
+        push -u origin Historia001
+        checkout master
+        push origin RespuestaPreguntaFusion
