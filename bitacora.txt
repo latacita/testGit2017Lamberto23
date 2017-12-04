@@ -1,11 +1,23 @@
 %%==================================================================%%
 %%                 Métodos de Desarrollo - Test de Git              %%
 %%==================================================================%%
-%% Alumno (Apellidos, Nombre):                                      %%
+%% Alumno (Apellidos, Nombre): Ripoll Álvarez, Lamberto             %%
 %%==================================================================%%
 
  Paso   Acción                       Notas
 ====== ============================ ================================
+ (03)   checkout -b Historia000
+ (04)   checkout -b Historia001
+ (05)   checkout Historia000
+ (07)   add *
+ (08)   commit -m "Paso 08"
+ (09)   checkout Historia001
+ (11)   stash
+        checkout Historia000
+ (16)   stash apply
+ (20)   merge Historia000           Al realizar la fusión, existe un conflicto
+                                    en bitacora.txt
+                                    Recursiva
  (25)                               fast-forward
  (27)   tag -a RespuestaPreguntaFusion -m "RespuestaPreguntaFusion"
  (28)   push origin master
@@ -17,3 +29,6 @@
         push -u origin Historia001
         checkout master
         push origin RespuestaPreguntaFusion
+ (30)   add *
+        commit -m "Paso 30"
+ (31)   merge Historia001			Recursiva
